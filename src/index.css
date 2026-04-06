@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 174 53% 68%;
+    --foreground: 180 30% 8%;
+
+    --card: 174 48% 72%;
+    --card-foreground: 180 20% 10%;
+
+    --popover: 174 53% 68%;
+    --popover-foreground: 180 20% 10%;
+
+    --primary: 174 60% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 45% 62%;
+    --secondary-foreground: 180 25% 15%;
+
+    --muted: 174 40% 64%;
+    --muted-foreground: 180 15% 30%;
+
+    --accent: 174 60% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 174 40% 58%;
+    --input: 174 40% 58%;
+    --ring: 174 55% 40%;
+
+    --radius: 0.5rem;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 174 25% 94%;
+    --sidebar-foreground: 180 20% 10%;
+    --sidebar-primary: 174 55% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 25% 90%;
+    --sidebar-accent-foreground: 180 20% 10%;
+    --sidebar-border: 174 20% 86%;
+    --sidebar-ring: 174 55% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(174 55% 40%), hsl(174 60% 55%));
+  }
+
+  .border-glow {
+    border-color: hsl(220 15% 88%);
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .bg-tiffany-light {
+    background-color: hsl(174 40% 92%);
+  }
+
+  .bg-tiffany {
+    background-color: hsl(174 53% 68%);
+  }
+}
