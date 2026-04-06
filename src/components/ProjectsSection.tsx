@@ -4,7 +4,6 @@ import { ChevronDown } from "lucide-react";
 
 const experiences = [
   {
-    number: "01",
     title: "DSO National Laboratories",
     category: "Member of Technical Staff",
     description:
@@ -12,7 +11,6 @@ const experiences = [
     period: "Aug 2019 — Present",
   },
   {
-    number: "02",
     title: "NTU — URECA / FYP",
     category: "Research",
     description:
@@ -20,7 +18,6 @@ const experiences = [
     period: "Aug 2018 — May 2019",
   },
   {
-    number: "03",
     title: "Nanyang Polytechnic",
     category: "Intern / FYP",
     description:
@@ -28,7 +25,6 @@ const experiences = [
     period: "Jul 2012 — Mar 2013",
   },
 ];
-
 
 const ProjectsSection = () => {
   const [expanded, setExpanded] = useState(false);
@@ -53,9 +49,9 @@ const ProjectsSection = () => {
 
         <div className="space-y-0 mb-8">
           <AnimatePresence initial={false}>
-            {visibleExperiences.map((exp, i) => (
+            {visibleExperiences.map((exp) => (
               <motion.div
-                key={exp.number}
+                key={exp.title}
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
@@ -64,10 +60,7 @@ const ProjectsSection = () => {
               >
                 <div className="group border-t border-border py-10 md:py-14">
                   <div className="grid md:grid-cols-12 gap-4 items-start">
-                    <span className="font-display text-sm text-muted-foreground md:col-span-1">
-                      {exp.number}
-                    </span>
-                    <div className="md:col-span-4">
+                    <div className="md:col-span-5">
                       <h3 className="font-display text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors duration-300">
                         {exp.title}
                       </h3>
@@ -104,7 +97,6 @@ const ProjectsSection = () => {
             </motion.span>
           </motion.button>
         )}
-
       </div>
     </section>
   );
