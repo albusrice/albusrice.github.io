@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# My webpage
 
-TODO: Document your project here
+This code is for my own person webpage
