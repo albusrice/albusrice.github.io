@@ -57,7 +57,7 @@ const ContactSection = () => {
             © {new Date().getFullYear()} Ryan Seah — All rights reserved.
           </p>
           <p className="font-body text-xs text-muted-foreground">
-            Singapore
+            Singapore / Canada (Montreal)
           </p>
         </div>
       </div>

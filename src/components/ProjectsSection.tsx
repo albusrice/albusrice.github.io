@@ -31,7 +31,7 @@ const ProjectsSection = () => {
   const visibleExperiences = expanded ? experiences : experiences.slice(0, 1);
 
   return (
-    <section id="work" className="py-20 px-6 lg:px-16 bg-tiffany-light">
+    <section id="experience" className="py-20 px-6 lg:px-16 bg-tiffany-light">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

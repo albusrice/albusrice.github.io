@@ -53,6 +53,12 @@ const HeroSection = () => {
                 View Experience
               </a>
               <a
+                href="#publications"
+                className="inline-flex items-center px-8 py-3 font-body font-medium text-sm tracking-wide hover-lift rounded-md transition-colors text-secondary-foreground bg-secondary border-secondary"
+              >
+                Publications
+              </a>
+              <a
                 href="#contact"
                 className="inline-flex items-center px-8 py-3 border border-border text-foreground font-body font-medium text-sm tracking-wide hover-lift rounded-md hover:border-primary/50 transition-colors"
               >
